@@ -7,11 +7,11 @@ import lombok.Setter;
 @Setter
 public class ProductDetails {
     private String _id;
-    private String productName;
-    private String productImageUrl;
-    private String productId;
-    private int yieldDuration;
+    private String product_name;
+    private String product_imageUrl;
+    private String product_id;
+    private int yield_duration;
     private String verity ;
-    private int pricePerKg;
-    private int productWeight;
+    private int price_per_kg;
+    private int product_weight;
 }
