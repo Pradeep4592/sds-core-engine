@@ -19,7 +19,10 @@ public class ProductDetailService
     ProductRepository productRepository;
     public String addProduct( ProductDetails productDetails){
         log.info("saving product");
-        return productRepository.save(productDetails).getProductId();}
+         productRepository.save(productDetails);
+         return "";
+
+    }
     public void deleteProduct(ProductDetails productDetails){
         productRepository.delete(productDetails);
         log.info("product deleted");
