@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/product")
 public class ProductController {
     Logger log= LoggerFactory.getLogger(ProductController.class);
@@ -28,6 +29,7 @@ public class ProductController {
         log.info("product deleted");
     }
     @GetMapping("/getAllProduct")
+    @CrossOrigin(origins = "http://localhost:3000")
     public List<ProductDetails> getAllProduct(){
         log.info("fetching all product ");
         return  productDetailService.getAllProduct();
